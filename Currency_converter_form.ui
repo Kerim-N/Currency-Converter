@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>241</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>380</width>
+    <height>240</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>380</width>
+    <height>385</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(66, 66, 66);
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLineEdit" name="lineEdit_from">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+	background-color: rgba(255,255,255,0.5);
+	border: 1px solid rgb(255,255,255);
+	padding-left: 5px;
+	border-radius: 7px;
+}
+
+</string>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhNone</set>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_from">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: 1px solid rgb(255, 255, 255);
+    padding-left: 5px;
+    padding-right: 5px;
+	background-color: rgba(255, 255, 255,0.5);
+border-radius: 7px;
+ }
+
+QComboBox::drop-down {
+    width: 0px;
+    height: 0px;
+    border: 0px;
+}
+QComboBox QAbstractItemView {
+	padding:3px;
+	border:1px solid white;
+	background-color: rgba(255, 255, 255,0.5);
+	selection-background-color:rgba(255,255,255,0);
+	color:black;
+	selection-color:black;
+}</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>TMT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>USD</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RUB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BTC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>GPB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>JPY</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AED</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UAH</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UZS</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_reverse">
+       <property name="font">
+        <font>
+         <pointsize>24</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color: rgba(255, 255, 255, 125);
+	border:1px solid rgb(255, 255, 255);
+	padding-left:10px;
+	padding-right:10px;
+	border-radius:20px;
+}
+QPushButton:hover{
+	background-color: rgba(255, 255, 255, 175);
+}</string>
+       </property>
+       <property name="text">
+        <string>⇅</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_to">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+	background-color: rgba(255,255,255,0.5);
+	border: 1px solid rgb(255,255,255);
+	padding-left: 5px;
+	border-radius: 7px;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_to">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: 1px solid rgb(255, 255, 255);
+    padding-left: 5px;
+    padding-right: 5px;
+	background-color: rgba(255, 255, 255,0.5);
+border-radius: 7px;
+ }
+
+QComboBox::drop-down {
+    width: 0px;
+    height: 0px;
+    border: 0px;
+}
+QComboBox QAbstractItemView {
+	padding:3px;
+	border:1px solid white;
+	background-color: rgba(255, 255, 255,0.5);
+	selection-background-color:rgba(255,255,255,0);
+	color:black;
+	selection-color:black;
+}</string>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>TMT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>USD</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RUB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BTC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>GPB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>JPY</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AED</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UAH</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UZS</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QWidget" name="verticalWidget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_graph"/>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton">
+     <property name="font">
+      <font>
+       <family>MS Reference Sans Serif</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(255,255,255);
+	border: 2px solid rgb(225, 145, 10);
+	background-color: rgb(255, 175, 38);
+	margin-top:10px;
+	padding:5px;
+border-radius: 7px;
+}
+QPushButton::pressed{	
+	background-color: rgb(235, 155, 25);
+}</string>
+     </property>
+     <property name="text">
+      <string>Converte</string>
+     </property>
+     <property name="shortcut">
+      <string>C</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
